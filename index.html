@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Our Portfolio</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#about" class=" hover:bg-blue-300 rounded-full p-1">About</a>
+                <a href="#skills" class="hover:bg-blue-300 rounded-full p-1">Skills</a>
+                <a href="#shops" class="hover:bg-blue-300 rounded-full p-1">Shops</a>
+                <a href="#contact" class="hover:bg-blue-300 rounded-full p-1">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="burger" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Side Navbar -->
+
+    <div id="sidenav" class="bg-blue-300 shadow-md fixed top-0 right-0 z-50" style="width: 50%; height: 100vh; right: -50%;">
+        <p class="cursor-pointer text-right p-2" id="closenav">X</p>
+        <div class="flex flex-col items-center gap-4">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#shops">shops</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+
+    <section id="hero" class="bg-blue-300 text-white h-screen flex flex-col justify-center items-center text-center p-4 relative">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, We are Team POGI-IT</h1>
+        <p class="text-xl md:text-2xl mb-8">This combines our expertise in design and responsiveness with our shop’s commitment to quality. Want me to tweak anything further?</p>
+        <a href="#shops" class="btn bg-white text-blue-300 py-2 px-4 rounded-full hover:bg-blue-100">View our shops</a>
+    </section>
+
+    <!-- <section class="zoom border border-blue-300 text-center rounded-full absolute top-36 p-2 m-2 bg-white" style="width: 30%;">
+        <h2 class="font-bold">Contact Me</h2>
+        <p class="text-sm">Feel free to reach out for collaborations or just a friendly chat.</p>
+        <p class="text-sm"><i class="fa-solid fa-envelope"></i> infokarthiga@gmail.com</p>
+    </section> -->
+
+    <section id="about" class="container mx-auto p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">About Us</h2>
+        <p class="text-sm mb-4">Hello! We are Team POGI-IT, a passionate frontend developer with experience in creating dynamic and responsive websites. We love coding and constantly learning new technologies to improve my skills.
+        </p>
+    </section>
+
+    <section id="skills" class="bg-gray-200 p-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="skill m-4 p-6 bg-white rounded-lg shadow-md">
+                    <i class="fab fa-html5 text-4xl text-orange-600"></i>
+                    <p class="mt-2">HTML5</p>
+                </div>
+                <div class="skill m-4 p-6 bg-white rounded-lg shadow-md">
+                    <i class="fab fa-css3-alt text-4xl text-blue-600"></i>
+                    <p class="mt-2">CSS3</p>
+                </div>
+                <div class="skill m-4 p-6 bg-white rounded-lg shadow-md">
+                    <i class="fab fa-js text-4xl text-yellow-600"></i>
+                    <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="skill m-4 p-6 bg-white rounded-lg shadow-md">
+                    <i class="fab fa-tailwindcss text-4xl text-teal-500"></i>
+                    <p class="mt-2">Tailwind CSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shops" class="container mx-auto p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Our Shops</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="project bg-white m-4 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Bike Shop</a>
+                </h3>
+                <p class="mb-2 text-sm">NEW BIKES COLLECTIONS 2025 Latest arrival of the new imported bikes , with a modern and heavy duty design and components.
+                </p>
+                <button type="text" class="btn bg-blue-600 text-black py-2 px-4 rounded-full hover:bg-white text-black"><a href="https://fangonilorenzo.github.io/cc14-product-landing-page/">View Project</a></button>
+            </div>
+            <div class="project bg-white m-4 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Trek Shop</a>
+                </h3>
+                <p class="mb-2 text-sm">The latest and modern bike of this year, is available in various presentations in this store, discover them now.</p>
+                <button type="text" class="btn bg-blue-600 text-black py-2 px-4 rounded-full hover:bg-white text-black"><a href="https://www.bing.com/ck/a?!&&p=53ff1b6db436b990a8404d287bc6254318a9a7bfbe2bfe1a8c65e89d4ddaa67fJmltdHM9MTc0NDUwMjQwMA&ptn=3&ver=2&hsh=4&fclid=23c550fb-cde8-6d06-307e-42e9cce96c56&psq=bikeshops+&u=a1aHR0cHM6Ly93d3cudHJla2Jpa2VzLmNvbS91cy9lbl9VUy8&ntb=1">View Project</a></button>
+            </div>
+
+            <!-- <div class="project bg-white m-4 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                <p class="mb-2">Short description of Project 3.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-200 p-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <form class="mx-auto max-w-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-left mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full p-1 border border-gray-300 rounded focus:outline-none focus:bg-red-100">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-1 border border-gray-300 rounded focus:outline-none focus:bg-red-100">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left mb-2">Message:</label>
+                    <textarea id="message" name="message" required class="w-full p-1 border border-gray-300 rounded focus:outline-none focus:bg-red-100"></textarea>
+                </div>
+                <button type="submit" class="btn bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-white shadow-md p-4 text-center">
+        <div class="social-links mb-4">
+            <a href="https://github.com/login" target="_blank" class="text-gray-800 mx-2"><i
+                    class="fab fa-github fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/" target="_blank" class="text-gray-800 mx-2"><i
+                    class="fab fa-linkedin fa-xl"></i></a>
+
+        </div>
+        <p>&copy; 2025 FANGONILO/SAMPOL/SISON. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

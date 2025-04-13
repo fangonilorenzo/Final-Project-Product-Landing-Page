@@ -1,0 +1,48 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Custom button styles */
+
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+
+/* Custom Animation */
+
+.zoom {
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#skills .skill:hover,
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: #93c5fd;
+    transition-property: all;
+}
+
+header nav .nav-links a:hover {
+    color: #1d4ed8;
+    /* Tailwind's blue-600 color */
+}
